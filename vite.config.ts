@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client/src"),
+      "@": path.join(process.cwd(), "client/src"),
     },
   },
-  root: "./client",
+  root: "client",
   build: {
     outDir: "dist",
   },
